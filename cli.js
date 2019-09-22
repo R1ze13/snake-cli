@@ -8,15 +8,15 @@ const meow = require('meow');
 const ui = importJsx('./ui');
 
 const cli = meow(`
-	Usage
-	  $ snake-cli
+  Usage
+    $ snake-cli
 
-	Options
-		--name  Your name
+  Options
+    --name  Your name
 
-	Examples
-	  $ snake-cli --name=Jane
-	  Hello, Jane
+  Examples
+    $ snake-cli --name=Jane
+    Hello, Jane
 `);
 
 render(React.createElement(ui, cli.flags));
